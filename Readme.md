@@ -7,7 +7,9 @@ WorthTheTrip — Product Dataflow & Page Specifications
 
 Purpose
 -------
-WorthTheTrip prevents unpaid, inefficient site visits by helping homeowners (clients) and skilled workers (labor) agree on fair pricing before anyone travels. This README documents the public/entry pages (pre-login), core UX flows, page-level content, microcopy guidance, architecture components, and the dataflow that makes **one visit, one job** possible.
+WorthTheTrip prevents unpaid, inefficient site visits by helping homeowners (clients) and skilled workers (labor) agree on fair pricing before anyone travels. 
+
+**One visit, one job** 
 
 Social Impact
 ------------------------------------
