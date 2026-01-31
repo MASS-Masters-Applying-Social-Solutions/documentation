@@ -1,8 +1,8 @@
 WorthTheTrip — Product Dataflow & Page Specifications
 
 <table><tr>
-<td><img src="WTT_Logo.jpeg" alt="WorthTheTrip logo" width="120" /></td>
-<td><img src="workflow_gif.gif" alt="Demo hero animation" width="240" /></td>
+<td><img src="WTT_Logo.jpeg" alt="WorthTheTrip logo" width="300" /></td>
+<td><img src="workflow_gif.gif" alt="Demo hero animation" width="600" /></td>
 </tr></table>
 
 Purpose
