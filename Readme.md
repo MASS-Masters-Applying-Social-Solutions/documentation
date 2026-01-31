@@ -14,6 +14,13 @@ Social Impact
 
 Unpaid site visits cost workers time, fuel, and income. WorthTheTrip removes uncertainty so effort is never wasted.
 
+Documentation
+------------------------------------
+Figma: https://www.figma.com/board/S8ppwbijS37r7dXQEnhdbz/MASS-Hackathon2026?node-id=15-30&t=3WTbzMFeqsU5zafZ-0
+
+Slides: https://www.figma.com/deck/MatovVTi3zcOcRje0HgKkW/worthTheTrip-Slides?node-id=1-439&t=4tmdISqwPJHpobLh-1
+
+
 Architecture & Components
 -------------------------
 This project is split into three main components. Each component has its own repository and responsibilities outlined below.
@@ -37,8 +44,7 @@ This project is split into three main components. Each component has its own rep
 - Purpose: Generates a price estimate for a job based on text and images.
 - Main responsibilities:
 	- Accepts job description, uploaded images, and address
-	- Processes text and images to estimate job cost (multimodal)
-	- Returns a structured response (e.g. parts with prices like $150)
+	- Based on the job title, images and description. The AI agent looks up the internet and collects information from various sources from the web. The sources include various estimates of the job. AI agent smartly provide a rough minimum estimate of the costs.
 	- Used during job creation to suggest a price to the user
 - Core ideas: multimodal input (text + images), price estimation based on content, simple API interface for frontend/backend
 - Repository: https://github.com/MASS-Masters-Applying-Social-Solutions/WTT-Backend-AI
@@ -79,40 +85,4 @@ Dataflow — Event Sequence
 4. If worker Accepts (or parties agree on counter): status moves to Reserved/Confirmed, contact info unlocks for both sides.
 5. After job completion: mark Completed; feedback/ratings optional.
 
-Accessibility & Trust
----------------------
-- Use clear, high-contrast labels and large tappable targets for mobile.
-- Explain AI pricing plainly; show a short rationale and allow counteroffers.
-- Show social proof and simple verification steps to build trust (profile completeness, reviews).
 
-Design Rationales — Why this works
-----------------------------------
-- Reduce decision friction: show price and media up-front so workers can decide without unnecessary clicks.
-- Frame AI as fairness: recommended pricing prevents lowball visits and supports worker income.
-- Unlock contact only after agreement: reduces spam and unpaid visits.
-
-Next steps / Implementation notes
----------------------------------
-- Wireframe each page using the content above.
-- Define the API endpoints for job creation, AI pricing, job listing, accept/counter flows, and contact unlocking.
-- Prototype the AI pricing model with sample dataset and iterate on transparency microcopy.
-
-Contact
--------
-Product & design: WorthTheTrip documentation
-
-Purpose
--------
-WorthTheTrip prevents unpaid, inefficient site visits by helping homeowners (clients) and skilled workers (labour) agree on fair pricing before anyone travels. This README documents the public/entry pages (pre-login), core UX flows, page-level content, microcopy guidance, and the dataflow that makes **one visit, one job** possible.
-
-Social Impact
-------------------------------------
-
-
-Dataflow — Event Sequence
--------------------------
-1. Client creates job -> job saved (status: Open) -> AI estimate generated and attached.
-2. Job appears on Browse and Map with AI price and media.
-3. Worker views job detail -> can Accept, Counter, or Reject.
-4. If worker Accepts (or parties agree on counter): status moves to Reserved/Confirmed, contact info unlocks for both sides.
-5. After job completion: mark Completed; feedback/ratings optional.
